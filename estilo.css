@@ -1,0 +1,351 @@
+/*Navbar*/
+.navbar{
+	position: relative;
+	z-index: 1;
+}
+.navbar-brand{
+	font-family: viga;
+	font-size: 32px;
+
+
+}
+
+.jumbotron{
+	background-image: url('img/jumbotron-bg.jpg');
+	background-size: cover;
+	height: 540px;
+	text-align: center;
+	position: relative;
+}
+
+.jumbotron .container{
+	z-index: 1;
+	position: relative;
+}
+
+.jumbotron::after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 80%;
+	background-image: linear-gradient(to top, rgba(0,0,0,1) rgba(0,0,0,0))
+	position: absolute;
+	bottom: 0;
+}
+
+.jumbotron .display-4{
+	color: white;
+	
+	margin-top: 150px;
+	font-weight: 200;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span{
+	font-weight: 500;
+}
+
+
+
+/* Info Panel*/
+
+.info-panel{
+box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+border-radius: 12px;
+margin-top: -100px;
+background-color: white;
+padding: 30px;
+}
+
+.info-panel img{
+	height: 80px;
+	width: 80px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.info-panel h4{
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 5px;
+
+}
+
+
+.info-panel p{
+	font-size: 14px;
+	color: #ACACAC;
+	margin-top: -5px;
+	font-weight: 200;
+}
+
+/*workingspace*/
+
+.workingspace{
+	margin-top: 128px;
+	text-align: center;
+}
+
+.workingspace h3{
+	font-size: 52px;
+	font-weight: 200;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+
+.workingspace h3 span{
+	font-weight: 500;
+}
+
+.workingspace p{
+	font-size: 18px;
+	color: #ACACAC;
+	font-weight: 200;
+	margin: 30px 0;
+}
+
+
+
+
+
+/*Comentarios*/
+
+.testimonial{
+	margin-top: 100px;
+}
+
+.testimonial h5{
+	text-align: center;
+	font-weight: 200;
+	font-style: italic;
+	font-size: 24px;
+}
+
+.testimonial figure img{
+	width: 60px;
+	
+	margin:28px 10px 10px;
+	opacity: 0.6;
+}
+
+.testimonial figure img.principal{
+	width: 90px;
+	opacity: 1;
+	margin-top: 5px;
+
+}
+
+.testimonial figure h5{
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	color: #1c2c5d;
+}
+
+.testimonial figure p{
+	font-size: 12px;
+	color: #ACACAC;
+	margin-top: -5px !important;
+
+}
+
+.testimonial figcaption{
+	text-align: center;
+}
+
+/*footer*/
+.footer{
+	margin-top: 50px;
+}
+.footer p{
+	color: #ACACAC;
+	font-size: 18px;
+}
+
+/*Otras Clases Utiles*/
+
+.tombol{
+	text-transform: uppercase;
+	border-radius: 40px;
+}
+
+
+
+ /*FEATURES*/
+
+ /*HEADER*/
+.main-header {
+  position: relative;
+  background: url('img/bisuteria2.jpg');
+  background-size: cover;
+  min-height: 600px;
+}
+
+.background-overlay {
+  background: rgba(48, 51, 107,.2);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+}
+
+.col-sm-6{
+
+	text-align: center;
+}
+.col-sm-6 h1{
+	margin-top:50%;
+}
+
+.caja{
+  background: rgba(48, 51, 107,.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 270px;
+  border-radius: 10px;
+
+  }
+
+/*TEAM*/
+
+.team
+{
+	margin-top:-10px;
+}
+
+.card-footer a{
+	float: right;
+	align-items: center;
+	margin-top:-38px;
+
+}
+
+.card-footer p{
+
+	margin-top:10px;
+	margin-bottom: 5px;
+}
+
+
+/*Productos*/
+
+.product{
+	background-color: #E1DEDD;
+	padding-top: 130px;
+	
+	padding-bottom: 30px;}
+
+.pagination{
+	margin-top: 30px;
+	padding-top: 30px;
+}
+
+
+
+
+/*PRODUCT*/
+
+.imagen-texto {
+  display:inline-block;
+  position:relative;
+}
+
+ .texto {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+  padding:10px;
+  margin:0;
+}
+
+.desvanecer:hover {
+  opacity: 0.07;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+/* Desktop version*/
+
+@media (min-width: 992px) { 
+
+.navbar-brand, .nav-link{
+	color: white !important;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+.nav-link{
+	text-transform: uppercase;
+	margin-right: 30px;
+	}
+
+.nav-link:hover::after{
+
+	content: '';
+	display: block;
+	border-bottom: 3px solid #0B63DC;
+	width: 50%;
+	margin:auto;
+	padding-bottom: 5px;
+	margin-bottom: -8px;
+	}
+
+.jumbotron{
+	margin-top: -75px;
+	height: 640px;
+	}
+
+.jumbotron .display-4 {
+	font-size: 62px;
+	}
+
+.workingspace{
+	text-align: left;
+	}
+
+.testimonial{
+	font-size: 32px;
+ 	}
+
+/*HEADER*/
+.main-header {
+  position: relative;
+  background: url('img/bisuteria.jpg');
+  background-size: cover;
+  min-height: 900px;
+}
+
+.background-overlay {
+  background: rgba(48, 51, 107,.2);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 900px;
+}
+
+.col-sm-6 h1{
+	margin-top:70%;
+}
+ .caja{
+  background: rgba(48, 51, 107,.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 225px;
+  border-radius: 10px;
+
+  }
+/*TEAM*/
+
+.team
+{
+	margin-top:100px;
+	margin-bottom: 100px;
+}
+ 
+}
