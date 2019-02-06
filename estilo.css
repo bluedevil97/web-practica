@@ -245,32 +245,15 @@ padding: 30px;
 }
 
 
-
-
-/*PRODUCT*/
-
-.imagen-texto {
-  display:inline-block;
-  position:relative;
+.formulario{
+	margin-bottom: 50px;
+	margin-top: 100px;
+	margin-right: 100px;
+	margin-left: 100px; 
+	background-color: ;
 }
 
- .texto {
-  position:absolute;
-  top:0;
-  left:0;
-  z-index:-1;
-  padding:10px;
-  margin:0;
-}
 
-.desvanecer:hover {
-  opacity: 0.07;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  -ms-transition: opacity 500ms;
-  transition: opacity 500ms;
-}
 /* Desktop version*/
 
 @media (min-width: 992px) { 
@@ -347,5 +330,8 @@ padding: 30px;
 	margin-top:100px;
 	margin-bottom: 100px;
 }
+
+/*srvicios*/
+
  
 }
